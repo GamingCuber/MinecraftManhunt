@@ -1,0 +1,10 @@
+name: MinecraftManhunt
+version: 1.0
+main: mcplugins.io.github.GamingCuber.MinecraftManhunt.Main
+author: GamingCuber
+description: A replication of Dream's famous game of manhunt!
+
+commands: 
+  runner: 
+  hunter: 
+  manhunt: 
