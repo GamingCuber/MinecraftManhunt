@@ -1,0 +1,7 @@
+name: MinecraftManhunt
+version: '${version}'
+main: me.gamingcuber.minecraftmanhunt.Main
+api-version: 1.19
+authors: [ GamingCuber ]
+description: A Spigot Plugin that does Dream's "Minecraft Manhunt" game
+website: https://github.com/GamingCuber/MinecraftManhunt
