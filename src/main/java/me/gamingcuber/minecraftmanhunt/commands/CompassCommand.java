@@ -35,7 +35,7 @@ public class CompassCommand implements CommandExecutor {
             } else {
 
                 sender.sendMessage(ChatColor.GREEN + "The hunters have now been given their compasses");
-                for (Player Hunter : getHunterList()) {
+                for (Player Hunter : plugin.getHunterList()) {
 
                     Hunter.getInventory().addItem(plugin.getHunterCompass());
 
@@ -52,13 +52,5 @@ public class CompassCommand implements CommandExecutor {
 
 
         return false;
-    }
-
-    private ArrayList<Player> getHunterList() {
-
-        ArrayList <Player> PlayerList = new ArrayList<>(Bukkit.getOnlinePlayers());
-        PlayerList.remove(plugin.Runner);
-        return PlayerList;
-
     }
 }
