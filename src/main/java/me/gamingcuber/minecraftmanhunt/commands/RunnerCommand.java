@@ -1,6 +1,7 @@
 package me.gamingcuber.minecraftmanhunt.commands;
 
 import me.gamingcuber.minecraftmanhunt.Main;
+import me.gamingcuber.minecraftmanhunt.tabcompleter.RunnerTabCompleter;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.command.Command;
@@ -16,6 +17,7 @@ public class RunnerCommand implements CommandExecutor {
 
         this.plugin = plugin;
         plugin.getCommand("runner").setExecutor(this);
+        plugin.getCommand("runner").setTabCompleter(new RunnerTabCompleter(plugin));
 
     }
 
