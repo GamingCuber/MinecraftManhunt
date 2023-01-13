@@ -2,6 +2,7 @@ package me.gamingcuber.minecraftmanhunt.listeners;
 
 import me.gamingcuber.minecraftmanhunt.Main;
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRespawnEvent;
@@ -20,9 +21,11 @@ public class RespawnListener implements Listener {
     @EventHandler
     public void onRespawn(PlayerRespawnEvent event) {
 
-        if (event.getPlayer().equals(plugin.Runner)) {
+        Player RespawnedPlayer = event.getPlayer();
 
+        if (!RespawnedPlayer.equals(plugin.Runner)) {
 
+            RespawnedPlayer.getInventory().addItem(plugin.getHunterCompass());
 
         }
 
