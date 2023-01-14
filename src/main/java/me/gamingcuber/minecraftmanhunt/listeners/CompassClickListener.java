@@ -13,7 +13,7 @@ public class CompassClickListener implements Listener {
 
     private Main plugin;
 
-    public CompassClickListener (Main plugin) {
+    public CompassClickListener(Main plugin) {
 
         this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);
@@ -30,8 +30,7 @@ public class CompassClickListener implements Listener {
             if (event.getItem() != null && event.getItem().equals(plugin.getHunterCompass())) {
 
                 if (inSameDimension(ClickedPlayer, plugin.Runner)) {
-
-                    ClickedPlayer.sendMessage(ChatColor.GREEN + "Tracking " + plugin.Runner.getName());
+                    ClickedPlayer.sendTitle("", ChatColor.GREEN + "Tracking " + plugin.Runner.getName());
                     ClickedPlayer.setCompassTarget(plugin.Runner.getLocation());
 
                 } else {

@@ -1,7 +1,10 @@
 package me.gamingcuber.minecraftmanhunt.listeners;
 
 import me.gamingcuber.minecraftmanhunt.Main;
-import org.bukkit.*;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.GameMode;
+import org.bukkit.Sound;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -13,7 +16,7 @@ public class DeathListener implements Listener {
 
     private Main plugin;
 
-    public DeathListener (Main plugin) {
+    public DeathListener(Main plugin) {
 
         this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);

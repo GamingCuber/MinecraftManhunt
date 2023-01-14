@@ -11,7 +11,7 @@ public class RespawnListener implements Listener {
 
     private Main plugin;
 
-    public RespawnListener (Main plugin) {
+    public RespawnListener(Main plugin) {
 
         this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);

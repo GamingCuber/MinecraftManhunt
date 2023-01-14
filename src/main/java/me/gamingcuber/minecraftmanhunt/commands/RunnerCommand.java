@@ -13,7 +13,7 @@ public class RunnerCommand implements CommandExecutor {
 
     private Main plugin;
 
-    public RunnerCommand (Main plugin) {
+    public RunnerCommand(Main plugin) {
 
         this.plugin = plugin;
         plugin.getCommand("runner").setExecutor(this);

@@ -18,6 +18,7 @@ import java.util.ArrayList;
 public final class Main extends JavaPlugin {
 
     public Player Runner;
+
     @Override
     public void onEnable() {
 
@@ -45,11 +46,11 @@ public final class Main extends JavaPlugin {
 
     }
 
-    public ArrayList <Player> getHunterList() {
+    public ArrayList<Player> getHunterList() {
 
-            ArrayList <Player> PlayerList = new ArrayList<>(Bukkit.getOnlinePlayers());
-            PlayerList.remove(Runner);
-            return PlayerList;
+        ArrayList<Player> PlayerList = new ArrayList<>(Bukkit.getOnlinePlayers());
+        PlayerList.remove(Runner);
+        return PlayerList;
 
     }
 }
