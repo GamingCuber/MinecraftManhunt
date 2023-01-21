@@ -30,7 +30,7 @@ public class CompassClickListener implements Listener {
             if (event.getItem() != null && event.getItem().equals(plugin.getHunterCompass())) {
 
                 if (inSameDimension(ClickedPlayer, plugin.Runner)) {
-                    ClickedPlayer.sendTitle("", ChatColor.GREEN + "Tracking " + plugin.Runner.getName());
+                    ClickedPlayer.sendMessage(ChatColor.GREEN + "Tracking " + plugin.Runner.getName());
                     ClickedPlayer.setCompassTarget(plugin.Runner.getLocation());
 
                 } else {
