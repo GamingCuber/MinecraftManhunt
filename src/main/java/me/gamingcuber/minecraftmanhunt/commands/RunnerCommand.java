@@ -28,10 +28,11 @@ public class RunnerCommand implements CommandExecutor {
         if (sender instanceof Player) {
 
             Server Serv = sender.getServer();
-            String FirstArgument = args[0].trim();
-            String SecondArgument = args[1].trim();
+            String FirstArgument = args[0];
 
             if (FirstArgument.equalsIgnoreCase("set")) {
+
+                String SecondArgument = args[1];
 
                 Player Runner = Serv.getPlayer(SecondArgument);
 
